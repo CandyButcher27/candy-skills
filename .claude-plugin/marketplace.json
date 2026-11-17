@@ -1,0 +1,29 @@
+{
+  "name": "candy-skills",
+  "owner": { "name": "CandyButcher27" },
+  "metadata": {
+    "description": "Four tested skills for Claude Code: mimi (project memory), vera (pre-push bug finding and fixing), scrappy (web lookups that return a digest, not a dump) and pixi (distinctive frontends from real design references)."
+  },
+  "plugins": [
+    {
+      "name": "mimi",
+      "source": "./plugins/mimi",
+      "description": "Project memory for coding agents that keeps only what the code cannot tell them: a mimi/ folder with state, issues, decisions and topic notes, loaded every session."
+    },
+    {
+      "name": "vera",
+      "source": "./plugins/vera",
+      "description": "Pre-push verification: 3 adversaries on 3 models try to break the change with runnable repros, each finding is confirmed, patched with its repro as the test, and re-attacked."
+    },
+    {
+      "name": "scrappy",
+      "source": "./plugins/scrappy",
+      "description": "Web and social lookups through the scrappy MCP server, routed through a summarising agent so only a short digest with source URLs reaches the main conversation."
+    },
+    {
+      "name": "pixi",
+      "source": "./plugins/pixi",
+      "description": "Builds a distinctive landing page or marketing site from a real site screenshot reference instead of the default model look."
+    }
+  ]
+}

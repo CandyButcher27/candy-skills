@@ -1,0 +1,7 @@
+{
+  "name": "vera",
+  "version": "0.1.0",
+  "description": "Pre-push bug finding and fixing: 3 adversaries on 3 models, confirmed repros, patch per finding, re-attack, report.",
+  "author": { "name": "CandyButcher27" },
+  "license": "MIT"
+}

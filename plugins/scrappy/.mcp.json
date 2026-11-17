@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "scrappy": {
+      "command": "npx",
+      "args": ["-y", "scrappy-agent", "mcp"]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "scrappy",
+  "version": "0.1.0",
+  "description": "Web and social lookups that return a short digest with source URLs, not raw page dumps.",
+  "author": { "name": "CandyButcher27" },
+  "repository": "https://github.com/CandyButcher27/scrappy",
+  "license": "MIT"
+}

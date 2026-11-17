@@ -1,8 +1,8 @@
 {
   "mcpServers": {
     "scrappy": {
-      "command": "npx",
-      "args": ["-y", "scrappy-agent", "mcp"]
+      "command": "uvx",
+      "args": ["--from", "git+https://github.com/CandyButcher27/scrappy", "scrappy", "mcp"]
     }
   }
 }

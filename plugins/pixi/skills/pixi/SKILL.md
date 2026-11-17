@@ -46,8 +46,11 @@ uv run --project PIXI python PIXI/scripts/pick_reference.py "<brief>" -n 5 --fee
 With `--feel` it returns only that feel's hand-tagged screenshots (and Fable 5.2 pages for clean,
 animated and playful, whose `prompt` field points at the page's full build prompt: read it as a
 model spec). Without `--feel` it returns candidates outside the house style from the local gallery
-harvest or, when that runs short, fetched fresh through scrappy (`npx scrappy-agent`, or the `scrappy` plugin) after a
-robots.txt check. Retag or add references with the feel picker
+harvest or, when that runs short, fetched fresh through scrappy (a sibling `scraping-agent`
+checkout, else `uvx --from git+https://github.com/CandyButcher27/scrappy`) after a robots.txt
+check. The gallery harvest is not in the pixi repo, so on a fresh clone `--feel` returns `[]` and a
+search needs scrappy API keys (`scrappy setup`). When it returns nothing, find reference pages and
+their screenshots with the scrappy plugin's tools, then apply the visual check below. Retag or add references with the feel picker
 (`uv run --project PIXI python PIXI/scripts/build_feel_picker.py`, then save over
 `PIXI/scripts/feels.json`).
 
